@@ -1,0 +1,16 @@
+- Set up express
+- Make routes and pages
+- Initial passport setup
+- Strategy setup(s)
+    - For google, get the google+ api and go through setup
+- Secure keys before pushing to github (config/keys.js)
+- /auth/profider handler
+- /auth/google handler
+- grant permission
+- get code from google in the redirect URI
+- exchange code for profile info
+- fire passport callback function
+- lookup/create user in own database (mongodb)
+- create unique cookie
+- browser stores cookie
+- decode cookie and retrieve user info
