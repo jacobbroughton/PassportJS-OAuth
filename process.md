@@ -11,6 +11,8 @@
 - Fill out strategy callback parameters
 - exchange code for profile info
 - fire passport callback function
+- connect to mongodb
+- Create user model
 - lookup/create user in own database (mongodb)
 - create unique cookie
 - browser stores cookie
