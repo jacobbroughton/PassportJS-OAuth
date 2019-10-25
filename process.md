@@ -8,6 +8,7 @@
 - /auth/google handler
 - grant permission
 - get code from google in the redirect URI
+- Fill out strategy callback parameters
 - exchange code for profile info
 - fire passport callback function
 - lookup/create user in own database (mongodb)

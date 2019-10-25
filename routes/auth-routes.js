@@ -13,14 +13,15 @@ router.get("/logout", (req, res) => {
 
 // auth with google
 // passport object has our google strat 
-// tells user that we need profile information
+// directs user to consent screen
 router.get("/google", passport.authenticate("google", {
     scope: ["profile"]
 }));
 
 // callback route for google to redirect to
-router.get("/google/redirect", (req, res) => {
-    res.send("You reached the callback URI")
+// directs user to redirect with new unique code, with new callback
+router.get("/google/redirect", passport.authenticate("google"),  (req, res) => {
+    res.send("You reached the callback URI");
 })
 
 module.exports = router;
